@@ -79,6 +79,10 @@
 		D99955792C05271B0048B015 /* UserRepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999556F2C05271B0048B015 /* UserRepositoriesViewModel.swift */; };
 		D999557A2C05271B0048B015 /* UserRepositoriesViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955702C05271B0048B015 /* UserRepositoriesViewModelProtocol.swift */; };
 		D999557D2C05279D0048B015 /* UserRepositoriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999557B2C05279C0048B015 /* UserRepositoriesViewModelTests.swift */; };
+		D99955852C05295F0048B015 /* RepositoryForkersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999557E2C05295F0048B015 /* RepositoryForkersViewController.swift */; };
+		D99955862C05295F0048B015 /* RepositoryForkersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955812C05295F0048B015 /* RepositoryForkersViewModel.swift */; };
+		D99955872C05295F0048B015 /* RepositoryForkersViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955822C05295F0048B015 /* RepositoryForkersViewModelProtocol.swift */; };
+		D999558A2C05297D0048B015 /* RepositoryForkersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955882C05297D0048B015 /* RepositoryForkersViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +171,10 @@
 		D999556F2C05271B0048B015 /* UserRepositoriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoriesViewModel.swift; sourceTree = "<group>"; };
 		D99955702C05271B0048B015 /* UserRepositoriesViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoriesViewModelProtocol.swift; sourceTree = "<group>"; };
 		D999557B2C05279C0048B015 /* UserRepositoriesViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoriesViewModelTests.swift; sourceTree = "<group>"; };
+		D999557E2C05295F0048B015 /* RepositoryForkersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryForkersViewController.swift; sourceTree = "<group>"; };
+		D99955812C05295F0048B015 /* RepositoryForkersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryForkersViewModel.swift; sourceTree = "<group>"; };
+		D99955822C05295F0048B015 /* RepositoryForkersViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryForkersViewModelProtocol.swift; sourceTree = "<group>"; };
+		D99955882C05297D0048B015 /* RepositoryForkersViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryForkersViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -506,6 +514,7 @@
 		D999551F2C0517970048B015 /* RepositoryFork */ = {
 			isa = PBXGroup;
 			children = (
+				D99955892C05297D0048B015 /* Tests */,
 				D99955202C05179C0048B015 /* Data */,
 			);
 			path = RepositoryFork;
@@ -523,6 +532,7 @@
 		D99955252C051B510048B015 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D99955842C05295F0048B015 /* RepositoryForkers */,
 				D99955722C05271B0048B015 /* UserRepositories */,
 				D99955262C051B5C0048B015 /* UsersList */,
 			);
@@ -756,6 +766,48 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		D999557F2C05295F0048B015 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D999557E2C05295F0048B015 /* RepositoryForkersViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D99955802C05295F0048B015 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D999557F2C05295F0048B015 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D99955832C05295F0048B015 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D99955822C05295F0048B015 /* RepositoryForkersViewModelProtocol.swift */,
+				D99955812C05295F0048B015 /* RepositoryForkersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D99955842C05295F0048B015 /* RepositoryForkers */ = {
+			isa = PBXGroup;
+			children = (
+				D99955832C05295F0048B015 /* ViewModel */,
+				D99955802C05295F0048B015 /* View */,
+			);
+			path = RepositoryForkers;
+			sourceTree = "<group>";
+		};
+		D99955892C05297D0048B015 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D99955882C05297D0048B015 /* RepositoryForkersViewModelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -878,6 +930,7 @@
 				D99955292C051B960048B015 /* User.swift in Sources */,
 				D99955362C051F800048B015 /* UsersListViewController.swift in Sources */,
 				D999553E2C051FEC0048B015 /* MainUIRouter.swift in Sources */,
+				D99955872C05295F0048B015 /* RepositoryForkersViewModelProtocol.swift in Sources */,
 				D999551D2C0517770048B015 /* RepositoryForkRepository.swift in Sources */,
 				D99954D02C0503880048B015 /* RequestTargetType.swift in Sources */,
 				D99954CF2C0503880048B015 /* RequestBuilder.swift in Sources */,
@@ -900,6 +953,7 @@
 				D99955522C0520F50048B015 /* UserTableViewCell.swift in Sources */,
 				D99954ED2C05106E0048B015 /* UsersRequestParameters.swift in Sources */,
 				D99955732C05271B0048B015 /* Repository.swift in Sources */,
+				D99955862C05295F0048B015 /* RepositoryForkersViewModel.swift in Sources */,
 				D99954E62C0506420048B015 /* EndpointPathGenerator.swift in Sources */,
 				D999552D2C051BCD0048B015 /* UsersListViewModel.swift in Sources */,
 				D99954CE2C0503880048B015 /* HTTPMethod.swift in Sources */,
@@ -908,6 +962,7 @@
 				D99955042C0514E50048B015 /* RepositoryResponse.swift in Sources */,
 				D999552E2C051BCD0048B015 /* UsersListViewModelProtocol.swift in Sources */,
 				D99954F22C0510AB0048B015 /* UsersRepository.swift in Sources */,
+				D99955852C05295F0048B015 /* RepositoryForkersViewController.swift in Sources */,
 				D99954D12C0503880048B015 /* NetworkManager.swift in Sources */,
 				D99954D22C0503880048B015 /* NetworkManaging.swift in Sources */,
 				D99954DA2C0503E90048B015 /* Data.swift in Sources */,
@@ -932,6 +987,7 @@
 				D99954E12C0504440048B015 /* MockNetworkManager.swift in Sources */,
 				D99955592C0522080048B015 /* TestCase.swift in Sources */,
 				D99955562C0521E00048B015 /* UsersViewModelTests.swift in Sources */,
+				D999558A2C05297D0048B015 /* RepositoryForkersViewModelTests.swift in Sources */,
 				D999557D2C05279D0048B015 /* UserRepositoriesViewModelTests.swift in Sources */,
 				D99954E02C0504440048B015 /* JSONLoader.swift in Sources */,
 			);

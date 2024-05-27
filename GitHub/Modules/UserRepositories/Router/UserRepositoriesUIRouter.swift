@@ -13,12 +13,12 @@ class UserRepositoriesUIRouter: UIRouter<UserRepositoriesNavigationDestination> 
 
 enum UserRepositoriesNavigationDestination: UINavigable {
     
-    case repositoryForkers
+    case repositoryForkers(RepositoryForkersViewModelProtocol)
     
     var viewController: UIViewController {
         switch self {
-            case .repositoryForkers:
-                return UIViewController()
+            case .repositoryForkers(let viewModel):
+                return RepositoryForkersViewController(viewModel: viewModel)
         }
     }
 }

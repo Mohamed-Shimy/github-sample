@@ -1,5 +1,5 @@
 //
-//  UserRepositoriesViewController.swift
+//  RepositoryForkersViewController.swift
 //  GitHub
 //
 //  Created by Mohamed Shemy on 27/05/2024.
@@ -7,45 +7,45 @@
 
 import UIKit
 
-class UserRepositoriesViewController: ViewController<UserRepositoriesViewModelProtocol, Repository> {
+class RepositoryForkersViewController: ViewController<RepositoryForkersViewModelProtocol, User> {
     
     // MARK: - Properties
     
-    private lazy var router = UserRepositoriesUIRouter(presenter: self)
+    private lazy var router = UsersListUIRouter(presenter: self)
     
     // MARK: - LifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "\(viewModel.user.name) Repositories"
+        title = "\(viewModel.repository.name) Forkers"
         configureTableView()
         configureDataSource()
         setupObservers()
-        viewModel.getRepositoriesList()
+        viewModel.getForkersList()
     }
     
     // MARK: - Setup
     
     private func configureTableView() {
         tableView.delegate = self
-        tableView.register(nib: RepositoryTableViewCell.self)
-        tableView.estimatedRowHeight = 1
+        tableView.register(nib: UserTableViewCell.self)
+        tableView.rowHeight = 70
     }
     
     private func configureDataSource() {
         dataSource = .init(tableView: tableView) {
-            (tableView: UITableView, indexPath: IndexPath, item: Repository) -> UITableViewCell? in
-            let cell: RepositoryTableViewCell = tableView.dequeue()
+            (tableView: UITableView, indexPath: IndexPath, item: User) -> UITableViewCell? in
+            let cell: UserTableViewCell = tableView.dequeue()
             cell.configure(item)
             return cell
         }
     }
     
     private func setupObservers() {
-        viewModel.repositories
+        viewModel.forkers
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] repositories in
-                self?.updateData(repositories)
+            .sink { [weak self] users in
+                self?.updateData(users)
             }
             .store(in: &cancellableBag)
         
@@ -59,19 +59,19 @@ class UserRepositoriesViewController: ViewController<UserRepositoriesViewModelPr
     
     // MARK: - Methods
     
-    private func openRepositoryForkers(_ repo: Repository) {
-        let viewModel = RepositoryForkersViewModel(repository: repo)
-        router.navigate(to: .repositoryForkers(viewModel))
+    private func openUserRepositories(_ user: User) {
+        let viewModel = UserRepositoriesViewModel(user: user)
+        router.navigate(to: .userRepositories(viewModel))
     }
 }
 
 // MARK: - UITableViewDelegate
 
-extension UserRepositoriesViewController: UITableViewDelegate {
+extension RepositoryForkersViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let repository = viewModel.getRepository(at: indexPath)
-        openRepositoryForkers(repository)
+        let forker = viewModel.getForker(at: indexPath)
+        openUserRepositories(forker)
         
         tableView.deselectRow(at: indexPath, animated: true)
     }

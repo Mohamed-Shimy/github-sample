@@ -52,6 +52,20 @@
 		D999552D2C051BCD0048B015 /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999552B2C051BCD0048B015 /* UsersListViewModel.swift */; };
 		D999552E2C051BCD0048B015 /* UsersListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999552C2C051BCD0048B015 /* UsersListViewModelProtocol.swift */; };
 		D99955312C051C170048B015 /* Combine+typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955302C051C170048B015 /* Combine+typealias.swift */; };
+		D99955362C051F800048B015 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955352C051F800048B015 /* UsersListViewController.swift */; };
+		D999553A2C051FAE0048B015 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955392C051FAE0048B015 /* ViewController.swift */; };
+		D999553D2C051FEC0048B015 /* MainUINavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999553B2C051FEB0048B015 /* MainUINavigationDestination.swift */; };
+		D999553E2C051FEC0048B015 /* MainUIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999553C2C051FEB0048B015 /* MainUIRouter.swift */; };
+		D99955432C05203D0048B015 /* UINavigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955402C05203D0048B015 /* UINavigable.swift */; };
+		D99955442C05203D0048B015 /* UIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955412C05203D0048B015 /* UIRouter.swift */; };
+		D99955472C05206D0048B015 /* UsersListUIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955462C05206D0048B015 /* UsersListUIRouter.swift */; };
+		D999554C2C0520C90048B015 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955492C0520C80048B015 /* UIView.swift */; };
+		D999554D2C0520C90048B015 /* UITableView+RegisterDequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999554A2C0520C80048B015 /* UITableView+RegisterDequeue.swift */; };
+		D999554E2C0520C90048B015 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999554B2C0520C80048B015 /* UIViewController+Alert.swift */; };
+		D99955522C0520F50048B015 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999554F2C0520F50048B015 /* UserTableViewCell.swift */; };
+		D99955532C0520F50048B015 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99955502C0520F50048B015 /* UserTableViewCell.xib */; };
+		D99955562C0521E00048B015 /* UsersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955552C0521E00048B015 /* UsersViewModelTests.swift */; };
+		D99955592C0522080048B015 /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955572C0522080048B015 /* TestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +127,20 @@
 		D999552B2C051BCD0048B015 /* UsersListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
 		D999552C2C051BCD0048B015 /* UsersListViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListViewModelProtocol.swift; sourceTree = "<group>"; };
 		D99955302C051C170048B015 /* Combine+typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+typealias.swift"; sourceTree = "<group>"; };
+		D99955352C051F800048B015 /* UsersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		D99955392C051FAE0048B015 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D999553B2C051FEB0048B015 /* MainUINavigationDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUINavigationDestination.swift; sourceTree = "<group>"; };
+		D999553C2C051FEB0048B015 /* MainUIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUIRouter.swift; sourceTree = "<group>"; };
+		D99955402C05203D0048B015 /* UINavigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigable.swift; sourceTree = "<group>"; };
+		D99955412C05203D0048B015 /* UIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRouter.swift; sourceTree = "<group>"; };
+		D99955462C05206D0048B015 /* UsersListUIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListUIRouter.swift; sourceTree = "<group>"; };
+		D99955492C0520C80048B015 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		D999554A2C0520C80048B015 /* UITableView+RegisterDequeue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+RegisterDequeue.swift"; sourceTree = "<group>"; };
+		D999554B2C0520C80048B015 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		D999554F2C0520F50048B015 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		D99955502C0520F50048B015 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		D99955552C0521E00048B015 /* UsersViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewModelTests.swift; sourceTree = "<group>"; };
+		D99955572C0522080048B015 /* TestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +195,7 @@
 		D99954942C0501D50048B015 /* GitHubTests */ = {
 			isa = PBXGroup;
 			children = (
+				D99955582C0522080048B015 /* TestCase */,
 				D99954DB2C05041B0048B015 /* Services */,
 				D99954F62C0510F10048B015 /* Modules */,
 			);
@@ -186,6 +215,8 @@
 			children = (
 				D99954B02C05022F0048B015 /* AppDelegate.swift */,
 				D99954B12C05022F0048B015 /* CommandLineArgumentKey.swift */,
+				D999553C2C051FEB0048B015 /* MainUIRouter.swift */,
+				D999553B2C051FEB0048B015 /* MainUINavigationDestination.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -267,6 +298,8 @@
 		D99954D62C0503D00048B015 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D999553F2C0520110048B015 /* Utilities */,
+				D99955372C051F8F0048B015 /* BaseModule */,
 				D99954D72C0503D90048B015 /* Extensions */,
 			);
 			path = Core;
@@ -275,6 +308,7 @@
 		D99954D72C0503D90048B015 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D99955482C05209B0048B015 /* UIKit */,
 				D999552F2C051BFB0048B015 /* Combine */,
 				D99954D82C0503DF0048B015 /* Foundation */,
 			);
@@ -367,6 +401,7 @@
 		D99954F72C0510FA0048B015 /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				D99955542C0521C60048B015 /* Tests */,
 				D99954F82C0510FE0048B015 /* Data */,
 			);
 			path = Users;
@@ -468,8 +503,10 @@
 		D99955262C051B5C0048B015 /* UsersList */ = {
 			isa = PBXGroup;
 			children = (
+				D99955452C0520570048B015 /* Router */,
 				D99955272C051B7D0048B015 /* Models */,
 				D999552A2C051BA70048B015 /* ViewModel */,
+				D99955322C051F410048B015 /* View */,
 			);
 			path = UsersList;
 			sourceTree = "<group>";
@@ -497,6 +534,107 @@
 				D99955302C051C170048B015 /* Combine+typealias.swift */,
 			);
 			path = Combine;
+			sourceTree = "<group>";
+		};
+		D99955322C051F410048B015 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D99955332C051F4D0048B015 /* Cells */,
+				D99955342C051F510048B015 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D99955332C051F4D0048B015 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D99955512C0520F50048B015 /* UserTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D99955342C051F510048B015 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D99955352C051F800048B015 /* UsersListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D99955372C051F8F0048B015 /* BaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				D99955382C051F9B0048B015 /* Controller */,
+			);
+			path = BaseModule;
+			sourceTree = "<group>";
+		};
+		D99955382C051F9B0048B015 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D99955392C051FAE0048B015 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D999553F2C0520110048B015 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D99955422C05203D0048B015 /* Navigation */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D99955422C05203D0048B015 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				D99955402C05203D0048B015 /* UINavigable.swift */,
+				D99955412C05203D0048B015 /* UIRouter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		D99955452C0520570048B015 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D99955462C05206D0048B015 /* UsersListUIRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D99955482C05209B0048B015 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D999554A2C0520C80048B015 /* UITableView+RegisterDequeue.swift */,
+				D99955492C0520C80048B015 /* UIView.swift */,
+				D999554B2C0520C80048B015 /* UIViewController+Alert.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		D99955512C0520F50048B015 /* UserTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D999554F2C0520F50048B015 /* UserTableViewCell.swift */,
+				D99955502C0520F50048B015 /* UserTableViewCell.xib */,
+			);
+			path = UserTableViewCell;
+			sourceTree = "<group>";
+		};
+		D99955542C0521C60048B015 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D99955552C0521E00048B015 /* UsersViewModelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D99955582C0522080048B015 /* TestCase */ = {
+			isa = PBXGroup;
+			children = (
+				D99955572C0522080048B015 /* TestCase.swift */,
+			);
+			path = TestCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,6 +719,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99955532C0520F50048B015 /* UserTableViewCell.xib in Resources */,
 				D99954BC2C05022F0048B015 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,11 +745,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D999554E2C0520C90048B015 /* UIViewController+Alert.swift in Sources */,
 				D99955052C0514E50048B015 /* RepositoryLicenseResponse.swift in Sources */,
 				D999550C2C0515210048B015 /* UserRepositoriesAPI.swift in Sources */,
 				D999551E2C0517770048B015 /* RepositoryForkAPI.swift in Sources */,
+				D99955432C05203D0048B015 /* UINavigable.swift in Sources */,
 				D99954D32C0503880048B015 /* NetworkRepository.swift in Sources */,
+				D999554D2C0520C90048B015 /* UITableView+RegisterDequeue.swift in Sources */,
 				D99955292C051B960048B015 /* User.swift in Sources */,
+				D99955362C051F800048B015 /* UsersListViewController.swift in Sources */,
+				D999553E2C051FEC0048B015 /* MainUIRouter.swift in Sources */,
 				D999551D2C0517770048B015 /* RepositoryForkRepository.swift in Sources */,
 				D99954D02C0503880048B015 /* RequestTargetType.swift in Sources */,
 				D99954CF2C0503880048B015 /* RequestBuilder.swift in Sources */,
@@ -621,12 +765,16 @@
 				D99954E52C0506420048B015 /* Endpoint.swift in Sources */,
 				D99954D52C0503880048B015 /* ResponseDecoder.swift in Sources */,
 				D99954EC2C05106E0048B015 /* UserResponse.swift in Sources */,
+				D99955442C05203D0048B015 /* UIRouter.swift in Sources */,
 				D99955172C05173B0048B015 /* RepositoryForkersRequestParameters.swift in Sources */,
 				D999550B2C0515210048B015 /* UserRepositoriesRepository.swift in Sources */,
+				D999553A2C051FAE0048B015 /* ViewController.swift in Sources */,
+				D99955522C0520F50048B015 /* UserTableViewCell.swift in Sources */,
 				D99954ED2C05106E0048B015 /* UsersRequestParameters.swift in Sources */,
 				D99954E62C0506420048B015 /* EndpointPathGenerator.swift in Sources */,
 				D999552D2C051BCD0048B015 /* UsersListViewModel.swift in Sources */,
 				D99954CE2C0503880048B015 /* HTTPMethod.swift in Sources */,
+				D999553D2C051FEC0048B015 /* MainUINavigationDestination.swift in Sources */,
 				D99955042C0514E50048B015 /* RepositoryResponse.swift in Sources */,
 				D999552E2C051BCD0048B015 /* UsersListViewModelProtocol.swift in Sources */,
 				D99954F22C0510AB0048B015 /* UsersRepository.swift in Sources */,
@@ -636,9 +784,11 @@
 				D99954B92C05022F0048B015 /* CommandLineArgumentKey.swift in Sources */,
 				D99955312C051C170048B015 /* Combine+typealias.swift in Sources */,
 				D99954F32C0510AB0048B015 /* UsersAPI.swift in Sources */,
+				D999554C2C0520C90048B015 /* UIView.swift in Sources */,
 				D99955062C0514E50048B015 /* UserRepositoriesRequestParameters.swift in Sources */,
 				D99954B82C05022F0048B015 /* AppDelegate.swift in Sources */,
 				D99954CD2C0503880048B015 /* GitHubBaseTargetType.swift in Sources */,
+				D99955472C05206D0048B015 /* UsersListUIRouter.swift in Sources */,
 				D99954D42C0503880048B015 /* NetworkError.swift in Sources */,
 				D99954F52C0510E00048B015 /* Encodable.swift in Sources */,
 			);
@@ -649,6 +799,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D99954E12C0504440048B015 /* MockNetworkManager.swift in Sources */,
+				D99955592C0522080048B015 /* TestCase.swift in Sources */,
+				D99955562C0521E00048B015 /* UsersViewModelTests.swift in Sources */,
 				D99954E02C0504440048B015 /* JSONLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -795,7 +947,6 @@
 				INFOPLIST_FILE = GitHub/Configurations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -823,7 +974,6 @@
 				INFOPLIST_FILE = GitHub/Configurations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

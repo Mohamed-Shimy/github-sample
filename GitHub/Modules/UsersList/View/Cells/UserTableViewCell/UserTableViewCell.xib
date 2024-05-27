@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="UserTableViewCell" customModule="GitHub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pvH-e1-D1J">
+                        <rect key="frame" x="10" y="10" width="300" height="62"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Lkz-JX-1sF">
+                                <rect key="frame" x="0.0" y="1.3333333333333321" width="64" height="59.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="f7b-6z-Qmh"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Waq-Ct-nZt">
+                                <rect key="frame" x="74" y="0.0" width="226" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIe-Fa-EgC">
+                                        <rect key="frame" x="0.0" y="0.0" width="226" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Njh-as-Idg">
+                                        <rect key="frame" x="0.0" y="30.333333333333336" width="226" height="31.666666666666664"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="n4S-X1-o4L">
+                                                <rect key="frame" x="0.0" y="0.0" width="113" height="31.666666666666668"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book.closed.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wh1-E6-iSa">
+                                                        <rect key="frame" x="0.0" y="6.3333333333333304" width="20" height="19.666666666666671"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="c3D-Cb-AeT"/>
+                                                            <constraint firstAttribute="width" constant="20" id="wKn-GX-vUY"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Iu-lj-L9B">
+                                                        <rect key="frame" x="25" y="5.6666666666666625" width="88" height="20.333333333333336"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AsP-cc-SgA">
+                                                <rect key="frame" x="113" y="0.0" width="113" height="31.666666666666668"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.2.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="L46-Pd-22A">
+                                                        <rect key="frame" x="0.0" y="7.6666666666666643" width="20" height="18"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="6V5-nx-lfr"/>
+                                                            <constraint firstAttribute="width" constant="20" id="WrM-EH-srT"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vv-eb-IFl">
+                                                        <rect key="frame" x="25" y="5.6666666666666625" width="88" height="20.333333333333336"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pvH-e1-D1J" secondAttribute="trailing" constant="10" id="4mq-dW-ykr"/>
+                    <constraint firstItem="pvH-e1-D1J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ICF-Om-8am"/>
+                    <constraint firstAttribute="bottom" secondItem="pvH-e1-D1J" secondAttribute="bottom" constant="10" id="aOt-qd-TlV"/>
+                    <constraint firstItem="pvH-e1-D1J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hxz-0q-j2R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImageView" destination="Lkz-JX-1sF" id="RYy-hJ-C6E"/>
+                <outlet property="followersCountLabel" destination="7vv-eb-IFl" id="CDf-4V-iOi"/>
+                <outlet property="repositoriesCountLabel" destination="2Iu-lj-L9B" id="C0k-Up-Or3"/>
+                <outlet property="userNameLabel" destination="gIe-Fa-EgC" id="9fc-yz-Wvu"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="2.1126760563380285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="book.closed.fill" catalog="system" width="115" height="128"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.2.fill" catalog="system" width="128" height="86"/>
+    </resources>
+</document>

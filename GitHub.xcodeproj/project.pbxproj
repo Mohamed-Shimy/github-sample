@@ -22,6 +22,8 @@
 		D99954DA2C0503E90048B015 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99954D92C0503E90048B015 /* Data.swift */; };
 		D99954E02C0504440048B015 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99954DE2C0504440048B015 /* JSONLoader.swift */; };
 		D99954E12C0504440048B015 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99954DF2C0504440048B015 /* MockNetworkManager.swift */; };
+		D99954E52C0506420048B015 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99954E22C0506420048B015 /* Endpoint.swift */; };
+		D99954E62C0506420048B015 /* EndpointPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99954E32C0506420048B015 /* EndpointPathGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		D99954D92C0503E90048B015 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		D99954DE2C0504440048B015 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		D99954DF2C0504440048B015 /* MockNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		D99954E22C0506420048B015 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D99954E32C0506420048B015 /* EndpointPathGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointPathGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				D99954BF2C0503650048B015 /* Base */,
+				D99954E42C0506420048B015 /* EndPoints */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -247,6 +252,15 @@
 				D99954DE2C0504440048B015 /* JSONLoader.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		D99954E42C0506420048B015 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				D99954E32C0506420048B015 /* EndpointPathGenerator.swift */,
+				D99954E22C0506420048B015 /* Endpoint.swift */,
+			);
+			path = EndPoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +366,9 @@
 				D99954D32C0503880048B015 /* NetworkRepository.swift in Sources */,
 				D99954D02C0503880048B015 /* RequestTargetType.swift in Sources */,
 				D99954CF2C0503880048B015 /* RequestBuilder.swift in Sources */,
+				D99954E52C0506420048B015 /* Endpoint.swift in Sources */,
 				D99954D52C0503880048B015 /* ResponseDecoder.swift in Sources */,
+				D99954E62C0506420048B015 /* EndpointPathGenerator.swift in Sources */,
 				D99954CE2C0503880048B015 /* HTTPMethod.swift in Sources */,
 				D99954D12C0503880048B015 /* NetworkManager.swift in Sources */,
 				D99954D22C0503880048B015 /* NetworkManaging.swift in Sources */,

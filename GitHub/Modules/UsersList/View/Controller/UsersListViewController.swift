@@ -61,7 +61,8 @@ class UsersListViewController: ViewController<UsersListViewModelProtocol, User> 
     // MARK: - Methods
    
     private func openUserRepositories(_ user: User) {
-        router.navigate(to: .userRepositories)
+        let viewModel = UserRepositoriesViewModel(user: user)
+        router.navigate(to: .userRepositories(viewModel))
     }
 }
 

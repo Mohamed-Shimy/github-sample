@@ -13,12 +13,12 @@ class UsersListUIRouter: UIRouter<UsersListNavigationDestination> {
 
 enum UsersListNavigationDestination: UINavigable {
     
-    case userRepositories
+    case userRepositories(UserRepositoriesViewModelProtocol)
     
     var viewController: UIViewController {
         switch self {
-            case .userRepositories:
-                return UIViewController()
+            case .userRepositories(let viewModel):
+                return UserRepositoriesViewController(viewModel: viewModel)
         }
     }
 }

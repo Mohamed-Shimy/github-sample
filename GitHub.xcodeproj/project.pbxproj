@@ -70,6 +70,15 @@
 		D999555E2C0523EB0048B015 /* UIImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999555B2C0523EB0048B015 /* UIImageLoader.swift */; };
 		D99955612C05242C0048B015 /* ImageView+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999555F2C05242C0048B015 /* ImageView+LoadImage.swift */; };
 		D99955622C05242C0048B015 /* UIImage+Predefined.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955602C05242C0048B015 /* UIImage+Predefined.swift */; };
+		D99955732C05271B0048B015 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955632C05271B0048B015 /* Repository.swift */; };
+		D99955742C05271B0048B015 /* RepositoryLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955642C05271B0048B015 /* RepositoryLicense.swift */; };
+		D99955752C05271B0048B015 /* UserRepositoriesUIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955662C05271B0048B015 /* UserRepositoriesUIRouter.swift */; };
+		D99955762C05271B0048B015 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955682C05271B0048B015 /* RepositoryTableViewCell.swift */; };
+		D99955772C05271B0048B015 /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99955692C05271B0048B015 /* RepositoryTableViewCell.xib */; };
+		D99955782C05271B0048B015 /* UserRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999556C2C05271B0048B015 /* UserRepositoriesViewController.swift */; };
+		D99955792C05271B0048B015 /* UserRepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999556F2C05271B0048B015 /* UserRepositoriesViewModel.swift */; };
+		D999557A2C05271B0048B015 /* UserRepositoriesViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955702C05271B0048B015 /* UserRepositoriesViewModelProtocol.swift */; };
+		D999557D2C05279D0048B015 /* UserRepositoriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999557B2C05279C0048B015 /* UserRepositoriesViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +158,15 @@
 		D999555B2C0523EB0048B015 /* UIImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageLoader.swift; sourceTree = "<group>"; };
 		D999555F2C05242C0048B015 /* ImageView+LoadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageView+LoadImage.swift"; sourceTree = "<group>"; };
 		D99955602C05242C0048B015 /* UIImage+Predefined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Predefined.swift"; sourceTree = "<group>"; };
+		D99955632C05271B0048B015 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		D99955642C05271B0048B015 /* RepositoryLicense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryLicense.swift; sourceTree = "<group>"; };
+		D99955662C05271B0048B015 /* UserRepositoriesUIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoriesUIRouter.swift; sourceTree = "<group>"; };
+		D99955682C05271B0048B015 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		D99955692C05271B0048B015 /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
+		D999556C2C05271B0048B015 /* UserRepositoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoriesViewController.swift; sourceTree = "<group>"; };
+		D999556F2C05271B0048B015 /* UserRepositoriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoriesViewModel.swift; sourceTree = "<group>"; };
+		D99955702C05271B0048B015 /* UserRepositoriesViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoriesViewModelProtocol.swift; sourceTree = "<group>"; };
+		D999557B2C05279C0048B015 /* UserRepositoriesViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoriesViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,6 +468,7 @@
 		D999550D2C05153C0048B015 /* UserRepositories */ = {
 			isa = PBXGroup;
 			children = (
+				D999557C2C05279C0048B015 /* Tests */,
 				D999550E2C0515400048B015 /* Data */,
 			);
 			path = UserRepositories;
@@ -504,6 +523,7 @@
 		D99955252C051B510048B015 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D99955722C05271B0048B015 /* UserRepositories */,
 				D99955262C051B5C0048B015 /* UsersList */,
 			);
 			path = Modules;
@@ -657,6 +677,85 @@
 			path = UIImageLoader;
 			sourceTree = "<group>";
 		};
+		D99955652C05271B0048B015 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D99955632C05271B0048B015 /* Repository.swift */,
+				D99955642C05271B0048B015 /* RepositoryLicense.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D99955672C05271B0048B015 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D99955662C05271B0048B015 /* UserRepositoriesUIRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D999556A2C05271B0048B015 /* RepositoryTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D99955682C05271B0048B015 /* RepositoryTableViewCell.swift */,
+				D99955692C05271B0048B015 /* RepositoryTableViewCell.xib */,
+			);
+			path = RepositoryTableViewCell;
+			sourceTree = "<group>";
+		};
+		D999556B2C05271B0048B015 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D999556A2C05271B0048B015 /* RepositoryTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D999556D2C05271B0048B015 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D999556C2C05271B0048B015 /* UserRepositoriesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D999556E2C05271B0048B015 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D999556B2C05271B0048B015 /* Cells */,
+				D999556D2C05271B0048B015 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D99955712C05271B0048B015 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D999556F2C05271B0048B015 /* UserRepositoriesViewModel.swift */,
+				D99955702C05271B0048B015 /* UserRepositoriesViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D99955722C05271B0048B015 /* UserRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				D99955652C05271B0048B015 /* Models */,
+				D99955672C05271B0048B015 /* Router */,
+				D999556E2C05271B0048B015 /* View */,
+				D99955712C05271B0048B015 /* ViewModel */,
+			);
+			path = UserRepositories;
+			sourceTree = "<group>";
+		};
+		D999557C2C05279C0048B015 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D999557B2C05279C0048B015 /* UserRepositoriesViewModelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -739,6 +838,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99955772C05271B0048B015 /* RepositoryTableViewCell.xib in Resources */,
 				D99955532C0520F50048B015 /* UserTableViewCell.xib in Resources */,
 				D99954BC2C05022F0048B015 /* Assets.xcassets in Resources */,
 			);
@@ -773,6 +873,8 @@
 				D99954D32C0503880048B015 /* NetworkRepository.swift in Sources */,
 				D999555E2C0523EB0048B015 /* UIImageLoader.swift in Sources */,
 				D999554D2C0520C90048B015 /* UITableView+RegisterDequeue.swift in Sources */,
+				D99955752C05271B0048B015 /* UserRepositoriesUIRouter.swift in Sources */,
+				D99955782C05271B0048B015 /* UserRepositoriesViewController.swift in Sources */,
 				D99955292C051B960048B015 /* User.swift in Sources */,
 				D99955362C051F800048B015 /* UsersListViewController.swift in Sources */,
 				D999553E2C051FEC0048B015 /* MainUIRouter.swift in Sources */,
@@ -781,7 +883,9 @@
 				D99954CF2C0503880048B015 /* RequestBuilder.swift in Sources */,
 				D99955182C05173B0048B015 /* RepositoryForkerResponse.swift in Sources */,
 				D999551C2C0517770048B015 /* RepositoryForkRepositoryProtocol.swift in Sources */,
+				D999557A2C05271B0048B015 /* UserRepositoriesViewModelProtocol.swift in Sources */,
 				D999550A2C0515210048B015 /* UserRepositoriesRepositoryProtocol.swift in Sources */,
+				D99955742C05271B0048B015 /* RepositoryLicense.swift in Sources */,
 				D99954F12C0510AB0048B015 /* UsersRepositoryProtocol.swift in Sources */,
 				D99954E52C0506420048B015 /* Endpoint.swift in Sources */,
 				D99954D52C0503880048B015 /* ResponseDecoder.swift in Sources */,
@@ -791,9 +895,11 @@
 				D99955612C05242C0048B015 /* ImageView+LoadImage.swift in Sources */,
 				D99955172C05173B0048B015 /* RepositoryForkersRequestParameters.swift in Sources */,
 				D999550B2C0515210048B015 /* UserRepositoriesRepository.swift in Sources */,
+				D99955792C05271B0048B015 /* UserRepositoriesViewModel.swift in Sources */,
 				D999553A2C051FAE0048B015 /* ViewController.swift in Sources */,
 				D99955522C0520F50048B015 /* UserTableViewCell.swift in Sources */,
 				D99954ED2C05106E0048B015 /* UsersRequestParameters.swift in Sources */,
+				D99955732C05271B0048B015 /* Repository.swift in Sources */,
 				D99954E62C0506420048B015 /* EndpointPathGenerator.swift in Sources */,
 				D999552D2C051BCD0048B015 /* UsersListViewModel.swift in Sources */,
 				D99954CE2C0503880048B015 /* HTTPMethod.swift in Sources */,
@@ -807,6 +913,7 @@
 				D99954DA2C0503E90048B015 /* Data.swift in Sources */,
 				D99954B92C05022F0048B015 /* CommandLineArgumentKey.swift in Sources */,
 				D99955312C051C170048B015 /* Combine+typealias.swift in Sources */,
+				D99955762C05271B0048B015 /* RepositoryTableViewCell.swift in Sources */,
 				D99954F32C0510AB0048B015 /* UsersAPI.swift in Sources */,
 				D999554C2C0520C90048B015 /* UIView.swift in Sources */,
 				D99955062C0514E50048B015 /* UserRepositoriesRequestParameters.swift in Sources */,
@@ -825,6 +932,7 @@
 				D99954E12C0504440048B015 /* MockNetworkManager.swift in Sources */,
 				D99955592C0522080048B015 /* TestCase.swift in Sources */,
 				D99955562C0521E00048B015 /* UsersViewModelTests.swift in Sources */,
+				D999557D2C05279D0048B015 /* UserRepositoriesViewModelTests.swift in Sources */,
 				D99954E02C0504440048B015 /* JSONLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

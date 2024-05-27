@@ -33,6 +33,14 @@
 		D99954FC2C0511200048B015 /* users-0.json in Resources */ = {isa = PBXBuildFile; fileRef = D99954F92C0511200048B015 /* users-0.json */; };
 		D99954FD2C0511200048B015 /* users-46.json in Resources */ = {isa = PBXBuildFile; fileRef = D99954FA2C0511200048B015 /* users-46.json */; };
 		D99954FE2C0511200048B015 /* users-91.json in Resources */ = {isa = PBXBuildFile; fileRef = D99954FB2C0511200048B015 /* users-91.json */; };
+		D99955042C0514E50048B015 /* RepositoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955012C0514E50048B015 /* RepositoryResponse.swift */; };
+		D99955052C0514E50048B015 /* RepositoryLicenseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955022C0514E50048B015 /* RepositoryLicenseResponse.swift */; };
+		D99955062C0514E50048B015 /* UserRepositoriesRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955032C0514E50048B015 /* UserRepositoriesRequestParameters.swift */; };
+		D999550A2C0515210048B015 /* UserRepositoriesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955072C0515210048B015 /* UserRepositoriesRepositoryProtocol.swift */; };
+		D999550B2C0515210048B015 /* UserRepositoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955082C0515210048B015 /* UserRepositoriesRepository.swift */; };
+		D999550C2C0515210048B015 /* UserRepositoriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955092C0515210048B015 /* UserRepositoriesAPI.swift */; };
+		D99955112C0515580048B015 /* defunkt.json in Resources */ = {isa = PBXBuildFile; fileRef = D999550F2C0515580048B015 /* defunkt.json */; };
+		D99955122C0515580048B015 /* defunkt-repos.json in Resources */ = {isa = PBXBuildFile; fileRef = D99955102C0515580048B015 /* defunkt-repos.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +83,14 @@
 		D99954F92C0511200048B015 /* users-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "users-0.json"; sourceTree = "<group>"; };
 		D99954FA2C0511200048B015 /* users-46.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "users-46.json"; sourceTree = "<group>"; };
 		D99954FB2C0511200048B015 /* users-91.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "users-91.json"; sourceTree = "<group>"; };
+		D99955012C0514E50048B015 /* RepositoryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryResponse.swift; sourceTree = "<group>"; };
+		D99955022C0514E50048B015 /* RepositoryLicenseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryLicenseResponse.swift; sourceTree = "<group>"; };
+		D99955032C0514E50048B015 /* UserRepositoriesRequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoriesRequestParameters.swift; sourceTree = "<group>"; };
+		D99955072C0515210048B015 /* UserRepositoriesRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoriesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		D99955082C0515210048B015 /* UserRepositoriesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoriesRepository.swift; sourceTree = "<group>"; };
+		D99955092C0515210048B015 /* UserRepositoriesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoriesAPI.swift; sourceTree = "<group>"; };
+		D999550F2C0515580048B015 /* defunkt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = defunkt.json; sourceTree = "<group>"; };
+		D99955102C0515580048B015 /* defunkt-repos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "defunkt-repos.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +303,7 @@
 		D99954E72C0510370048B015 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D99954FF2C0514B10048B015 /* UserRepositories */,
 				D99954E82C0510490048B015 /* Users */,
 			);
 			path = Modules;
@@ -315,6 +332,7 @@
 		D99954F62C0510F10048B015 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D999550D2C05153C0048B015 /* UserRepositories */,
 				D99954F72C0510FA0048B015 /* Users */,
 			);
 			path = Modules;
@@ -334,6 +352,44 @@
 				D99954F92C0511200048B015 /* users-0.json */,
 				D99954FA2C0511200048B015 /* users-46.json */,
 				D99954FB2C0511200048B015 /* users-91.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D99954FF2C0514B10048B015 /* UserRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				D99955002C0514B90048B015 /* Models */,
+				D99955092C0515210048B015 /* UserRepositoriesAPI.swift */,
+				D99955072C0515210048B015 /* UserRepositoriesRepositoryProtocol.swift */,
+				D99955082C0515210048B015 /* UserRepositoriesRepository.swift */,
+			);
+			path = UserRepositories;
+			sourceTree = "<group>";
+		};
+		D99955002C0514B90048B015 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D99955032C0514E50048B015 /* UserRepositoriesRequestParameters.swift */,
+				D99955012C0514E50048B015 /* RepositoryResponse.swift */,
+				D99955022C0514E50048B015 /* RepositoryLicenseResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D999550D2C05153C0048B015 /* UserRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				D999550E2C0515400048B015 /* Data */,
+			);
+			path = UserRepositories;
+			sourceTree = "<group>";
+		};
+		D999550E2C0515400048B015 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D999550F2C0515580048B015 /* defunkt.json */,
+				D99955102C0515580048B015 /* defunkt-repos.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -428,7 +484,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99955122C0515580048B015 /* defunkt-repos.json in Resources */,
 				D99954FE2C0511200048B015 /* users-91.json in Resources */,
+				D99955112C0515580048B015 /* defunkt.json in Resources */,
 				D99954FD2C0511200048B015 /* users-46.json in Resources */,
 				D99954FC2C0511200048B015 /* users-0.json in Resources */,
 			);
@@ -441,22 +499,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99955052C0514E50048B015 /* RepositoryLicenseResponse.swift in Sources */,
+				D999550C2C0515210048B015 /* UserRepositoriesAPI.swift in Sources */,
 				D99954D32C0503880048B015 /* NetworkRepository.swift in Sources */,
 				D99954D02C0503880048B015 /* RequestTargetType.swift in Sources */,
 				D99954CF2C0503880048B015 /* RequestBuilder.swift in Sources */,
+				D999550A2C0515210048B015 /* UserRepositoriesRepositoryProtocol.swift in Sources */,
 				D99954F12C0510AB0048B015 /* UsersRepositoryProtocol.swift in Sources */,
 				D99954E52C0506420048B015 /* Endpoint.swift in Sources */,
 				D99954D52C0503880048B015 /* ResponseDecoder.swift in Sources */,
 				D99954EC2C05106E0048B015 /* UserResponse.swift in Sources */,
+				D999550B2C0515210048B015 /* UserRepositoriesRepository.swift in Sources */,
 				D99954ED2C05106E0048B015 /* UsersRequestParameters.swift in Sources */,
 				D99954E62C0506420048B015 /* EndpointPathGenerator.swift in Sources */,
 				D99954CE2C0503880048B015 /* HTTPMethod.swift in Sources */,
+				D99955042C0514E50048B015 /* RepositoryResponse.swift in Sources */,
 				D99954F22C0510AB0048B015 /* UsersRepository.swift in Sources */,
 				D99954D12C0503880048B015 /* NetworkManager.swift in Sources */,
 				D99954D22C0503880048B015 /* NetworkManaging.swift in Sources */,
 				D99954DA2C0503E90048B015 /* Data.swift in Sources */,
 				D99954B92C05022F0048B015 /* CommandLineArgumentKey.swift in Sources */,
 				D99954F32C0510AB0048B015 /* UsersAPI.swift in Sources */,
+				D99955062C0514E50048B015 /* UserRepositoriesRequestParameters.swift in Sources */,
 				D99954B82C05022F0048B015 /* AppDelegate.swift in Sources */,
 				D99954CD2C0503880048B015 /* GitHubBaseTargetType.swift in Sources */,
 				D99954D42C0503880048B015 /* NetworkError.swift in Sources */,

@@ -66,6 +66,10 @@
 		D99955532C0520F50048B015 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99955502C0520F50048B015 /* UserTableViewCell.xib */; };
 		D99955562C0521E00048B015 /* UsersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955552C0521E00048B015 /* UsersViewModelTests.swift */; };
 		D99955592C0522080048B015 /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955572C0522080048B015 /* TestCase.swift */; };
+		D999555D2C0523EB0048B015 /* UIImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999555A2C0523EB0048B015 /* UIImageCache.swift */; };
+		D999555E2C0523EB0048B015 /* UIImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999555B2C0523EB0048B015 /* UIImageLoader.swift */; };
+		D99955612C05242C0048B015 /* ImageView+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999555F2C05242C0048B015 /* ImageView+LoadImage.swift */; };
+		D99955622C05242C0048B015 /* UIImage+Predefined.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99955602C05242C0048B015 /* UIImage+Predefined.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +145,10 @@
 		D99955502C0520F50048B015 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		D99955552C0521E00048B015 /* UsersViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewModelTests.swift; sourceTree = "<group>"; };
 		D99955572C0522080048B015 /* TestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
+		D999555A2C0523EB0048B015 /* UIImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageCache.swift; sourceTree = "<group>"; };
+		D999555B2C0523EB0048B015 /* UIImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageLoader.swift; sourceTree = "<group>"; };
+		D999555F2C05242C0048B015 /* ImageView+LoadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageView+LoadImage.swift"; sourceTree = "<group>"; };
+		D99955602C05242C0048B015 /* UIImage+Predefined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Predefined.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +258,7 @@
 		D99954BF2C0503650048B015 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D999555C2C0523EB0048B015 /* UIImageLoader */,
 				D99954C72C0503870048B015 /* NetworkManager */,
 				D99954C92C0503870048B015 /* NetworkRepository */,
 				D99954C42C0503870048B015 /* Request */,
@@ -605,6 +614,8 @@
 		D99955482C05209B0048B015 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D999555F2C05242C0048B015 /* ImageView+LoadImage.swift */,
+				D99955602C05242C0048B015 /* UIImage+Predefined.swift */,
 				D999554A2C0520C80048B015 /* UITableView+RegisterDequeue.swift */,
 				D99955492C0520C80048B015 /* UIView.swift */,
 				D999554B2C0520C80048B015 /* UIViewController+Alert.swift */,
@@ -635,6 +646,15 @@
 				D99955572C0522080048B015 /* TestCase.swift */,
 			);
 			path = TestCase;
+			sourceTree = "<group>";
+		};
+		D999555C2C0523EB0048B015 /* UIImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				D999555A2C0523EB0048B015 /* UIImageCache.swift */,
+				D999555B2C0523EB0048B015 /* UIImageLoader.swift */,
+			);
+			path = UIImageLoader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -751,6 +771,7 @@
 				D999551E2C0517770048B015 /* RepositoryForkAPI.swift in Sources */,
 				D99955432C05203D0048B015 /* UINavigable.swift in Sources */,
 				D99954D32C0503880048B015 /* NetworkRepository.swift in Sources */,
+				D999555E2C0523EB0048B015 /* UIImageLoader.swift in Sources */,
 				D999554D2C0520C90048B015 /* UITableView+RegisterDequeue.swift in Sources */,
 				D99955292C051B960048B015 /* User.swift in Sources */,
 				D99955362C051F800048B015 /* UsersListViewController.swift in Sources */,
@@ -766,6 +787,8 @@
 				D99954D52C0503880048B015 /* ResponseDecoder.swift in Sources */,
 				D99954EC2C05106E0048B015 /* UserResponse.swift in Sources */,
 				D99955442C05203D0048B015 /* UIRouter.swift in Sources */,
+				D999555D2C0523EB0048B015 /* UIImageCache.swift in Sources */,
+				D99955612C05242C0048B015 /* ImageView+LoadImage.swift in Sources */,
 				D99955172C05173B0048B015 /* RepositoryForkersRequestParameters.swift in Sources */,
 				D999550B2C0515210048B015 /* UserRepositoriesRepository.swift in Sources */,
 				D999553A2C051FAE0048B015 /* ViewController.swift in Sources */,
@@ -775,6 +798,7 @@
 				D999552D2C051BCD0048B015 /* UsersListViewModel.swift in Sources */,
 				D99954CE2C0503880048B015 /* HTTPMethod.swift in Sources */,
 				D999553D2C051FEC0048B015 /* MainUINavigationDestination.swift in Sources */,
+				D99955622C05242C0048B015 /* UIImage+Predefined.swift in Sources */,
 				D99955042C0514E50048B015 /* RepositoryResponse.swift in Sources */,
 				D999552E2C051BCD0048B015 /* UsersListViewModelProtocol.swift in Sources */,
 				D99954F22C0510AB0048B015 /* UsersRepository.swift in Sources */,
